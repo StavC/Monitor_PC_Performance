@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/network_bandwidth_monitor.iml" filepath="$PROJECT_DIR$/.idea/network_bandwidth_monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Monitor_PC_Performance.iml" filepath="$PROJECT_DIR$/.idea/Monitor_PC_Performance.iml" />
     </modules>
   </component>
 </project>
