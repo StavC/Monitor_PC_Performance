@@ -1,4 +1,6 @@
 import psutil
+import tkinter as tk
+from Gui import Gui
 from psutil._common import bytes2human
 def pprint_ntuple(nt):
     details=[]
@@ -10,11 +12,12 @@ def pprint_ntuple(nt):
     return details
 
 
+
 def main():
 
    network_details=[]
    network_details=pprint_ntuple(psutil.net_io_counters())
-   print(network_details)
+  # print(network_details)
    bytes_sent =network_details[0]
    bytes_recv=network_details[1]
    packets_sent=network_details[2]
@@ -23,9 +26,11 @@ def main():
    while i<4:
        print(network_details[i])
        i=i+1
+   app=Gui(network_details)
+
+
 
    '''
-   print("X" * 100)
    svmem = psutil.virtual_memory()
    pprint_ntuple(svmem)
    print("X" * 100)
